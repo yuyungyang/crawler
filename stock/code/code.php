@@ -126,7 +126,7 @@ try
     {
         $arrData = [] ;
 
-        $strFile = sprintf('%s/stock/code/%d.csv', __DIR__, $intIndex) ;
+        $strFile = sprintf('/home/data/stock/code/%d.csv', $intIndex) ;
 
         is_dir(dirname($strFile)) || mkdir(dirname($strFile), 0777, true) ;
 
@@ -175,7 +175,3 @@ catch (Exception $e)
 
     exit(0) ;
 }
-
-
-
-

@@ -101,7 +101,7 @@ try
 
     $objDOMDocument->loadHTML($strElement) ;
 
-    $strFile = sprintf('%s/stock/tas/%s/%s/%s.csv', __DIR__, $strStockId, date('Ym'), date('Y-m-d')) ;
+    $strFile = sprintf('/home/data/stock/tas/%s/%s/%s.csv', $strStockId, date('Ym'), date('Y-m-d')) ;
 
     is_dir(dirname($strFile)) || mkdir(dirname($strFile), 0777, true) ;
 
